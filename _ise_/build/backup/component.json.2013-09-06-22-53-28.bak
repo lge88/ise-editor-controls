@@ -1,0 +1,44 @@
+{
+  "name": "ise-editor-controls",
+  "repo": "lge88/ise-editor-controls",
+  "description": "ise-editor-controls",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "lge88/three-build": "*"
+  },
+  "development": {
+    "lge88/expect.js": "*",
+    "lge88/arr-gen": "*",
+    "lge88/ise-viewport": "*"
+  },
+  "scripts": [
+    "lib/index.js"
+  ],
+  "main": "lib/index.js",
+  "_rename_": [
+    "component.json",
+    "Makefile",
+    "examples/index.html",
+    "examples/main.js",
+    "examples/main.css",
+    "test/index.html",
+    "test/test.js"
+  ],
+  "_ise_paths_": [
+    "lib",
+    "lib-client"
+  ],
+  "_auto_update_file_list_": {
+    "folders": [
+      "lib"
+    ]
+  },
+  "_auto_index_files_": [],
+  "paths": [
+    "/home/GL/Develop/js/ise/lib",
+    "/home/GL/Develop/js/ise/lib-client"
+  ],
+  "styles": [],
+  "remotes": []
+}
