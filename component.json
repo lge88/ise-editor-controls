@@ -9,8 +9,8 @@
   },
   "development": {
     "lge88/expect.js": "*",
-    "lge88/arr-gen": "*",
-    "lge88/ise-viewport": "*"
+    "lge88/ise-viewport": "*",
+    "lge88/three-random-cubes": "*"
   },
   "scripts": [
     "lib/index.js"
