@@ -4,9 +4,9 @@ var arrgen = require( 'arr-gen' );
 var THREE = require( 'three' );
 
 var viewport = ISEViewport();
+var controls = new EditorControls( viewport.camera, viewport.container );
 
 var scene = viewport.scene;
-var camera = viewport.camera;
 
 arrgen( 100, function( i ) {
   return {
@@ -22,7 +22,6 @@ arrgen( 100, function( i ) {
   scene.add( c );
 } );
 
-var controls = new EditorControls( camera, viewport.canvas2D );
 
 function cube( w, h, t ) {
   var shininess = 50, specular = 0x333333, bumpScale = 1, shading = THREE.SmoothShading;
