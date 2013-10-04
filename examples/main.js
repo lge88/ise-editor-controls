@@ -4,7 +4,7 @@ var randomCubes = require( 'three-random-cubes' );
 var THREE = require( 'three' );
 var StrokeRenderer = require( 'ise-stroke-renderer' );
 
-var viewport = ISEViewport( { container: document.getElementById( 'main' ) } );
+var viewport = ISEViewport( { container: document.getElementById( 'main' ), grid: true } );
 var controls = new EditorControls( viewport.camera, viewport.container );
 var strokeRenderer = new StrokeRenderer( viewport.canvas2D );
 strokeRenderer.start();
