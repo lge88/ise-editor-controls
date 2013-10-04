@@ -4,7 +4,7 @@ var randomCubes = require( 'three-random-cubes' );
 var THREE = require( 'three' );
 var StrokeRenderer = require( 'ise-stroke-renderer' );
 
-var viewport = ISEViewport();
+var viewport = ISEViewport( { container: document.getElementById( 'main' ) } );
 var controls = new EditorControls( viewport.camera, viewport.container );
 var strokeRenderer = new StrokeRenderer( viewport.canvas2D );
 strokeRenderer.start();
@@ -15,21 +15,12 @@ var cubes = randomCubes( 100 ).map( function( c ) { scene.add( c ); return c; } 
 var currentSketch = [];
 var tid = null;
 controls.on( 'sketchStart', function( p ) {
-  // currentSketch = [];
   clearTimeout( tid );
   strokeRenderer.add( currentSketch );
-  // var c = cube();
-  // c.position.y = p.x;
-  // c.position.z = p.y;
-  // scene.add( c );
 } );
 
 controls.on( 'sketching', function( p ) {
   currentSketch.push( p );
-  // var c = cube();
-  // c.position.y = p.x;
-  // c.position.z = p.y;
-  // scene.add( c );
 } );
 
 controls.on( 'oneStroke', function( p ) {

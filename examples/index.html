@@ -17,11 +17,24 @@
       width: 100%;
       position: absolute;
       top:0px;
+      },
+      body {
+          margin: 0px;
+          padding: 0px;
+          overflow: hidden;
+      }
+      .viewport {
+          position: absolute;
+          left: 20px;
+          top: 20px;
+          right: 20px;
+          bottom: 20px;
       }
     </style>
   </head>
   <body>
     <div id='debug'></div>
+    <div id='main' class='viewport'></div>
     <script type="text/javascript" src="../build/build.js"></script>
     <script type="text/javascript" src="main.js"></script>
   </body>
