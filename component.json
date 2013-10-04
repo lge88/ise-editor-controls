@@ -5,7 +5,9 @@
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
-    "lge88/three-build": "*"
+    "lge88/three-build": "*",
+    "lge88/ise-stroke-renderer": "*",
+    "component/emitter": "*"
   },
   "development": {
     "lge88/expect.js": "*",
