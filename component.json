@@ -15,6 +15,7 @@
     "lge88/three-random-cubes": "*"
   },
   "scripts": [
+    "lib/index.bak.js",
     "lib/index.js"
   ],
   "main": "lib/index.js",
